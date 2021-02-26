@@ -8,7 +8,7 @@ setup(
   author = 'Rednek46',                  
   author_email = 'nuzer501@gmail.com',    
   url = 'https://rednek46.me',  
-  download_url = 'https://github.com/rednek46/EssentialCV/archive/0.1.tar.gz',    
+  download_url = 'https://github.com/rednek46/EssentialCV/archive/v0.1.tar.gz',    
   keywords = ['OpenCV', 'Simple', 'Essentials', 'haar'], 
   install_requires=[            # I get to this in a second
           'opencv-python',
