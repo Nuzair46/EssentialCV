@@ -11,7 +11,7 @@ setup(
   download_url = 'https://github.com/rednek46/EssentialCV/archive/v0.1.tar.gz',    
   keywords = ['OpenCV', 'Simple', 'Essentials', 'haar'], 
   install_requires=[            # I get to this in a second
-          'opencv-python',
+          'opencv-contrib-python',
           'numpy',
       ],
   classifiers=[
