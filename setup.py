@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'EssentialCV',         
   packages = ['EssentialCV'],   
-  version = '0.1',     
+  version = '0.2',     
   license='MIT',       
   description = 'A small module to simplify essential OpenCV functions.',
   author = 'Rednek46',                  
   author_email = 'nuzer501@gmail.com',    
   url = 'https://rednek46.me',  
-  download_url = 'https://github.com/rednek46/EssentialCV/archive/v0.1.tar.gz',    
+  download_url = 'https://github.com/rednek46/EssentialCV/archive/v0.2.tar.gz',    
   keywords = ['OpenCV', 'Simple', 'Essentials', 'haar'], 
   install_requires=[            # I get to this in a second
           'opencv-contrib-python',
