@@ -1,6 +1,6 @@
 # EssentialCV
 ----------
-## Author: Rednek46 - Nuzair Rasheed
+## Author: Rednek46
 ---------------------------------
 * This is a simplified module for the great OpenCV Library.
 * Most of the essential functions in the library are condensed to a minimal and easy to understand code.
