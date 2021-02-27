@@ -143,9 +143,9 @@ Documentation:
 		* Flip along x or y or both axis.
 		* This takes 2 values. The Image, axis.
 		* axis : 
-			 0 => x
-			 1 => y
-			-1 => xy
+			 0  => x
+			 1  => y
+			 -1 => xy
 		* Returns image.
 
 * class Rescale:  

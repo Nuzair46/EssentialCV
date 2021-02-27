@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
   name = 'EssentialCV',         
   packages = ['EssentialCV'],   
-  version = '0.231',     
+  version = '0.24',     
   license='MIT',       
   description = 'A small module to simplify essential OpenCV functions.',
   long_description=long_description,
