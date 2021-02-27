@@ -1,6 +1,8 @@
 EssentialCV
 ------------
 
+[![PyPI](https://img.shields.io/pypi/v/EssentialCV.svg)](https://pypi.python.org/pypi/EssentialCV)
+
 * This is a simplified module for the great OpenCV Library.
 * Most of the essential functions in the library are condensed to a minimal and easy to understand code.
 	
