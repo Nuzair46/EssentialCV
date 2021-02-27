@@ -97,174 +97,173 @@ Documentation:
 	* This takes 4 values. The Image, and max Threshold, kernel size default 11 and Mean_tune default 3.
 	* Returns thresholded image.
 
-* class Blur:
+* class Blur:  
 	
-	1. `Blur.avgBlur(img, strength = (3,3))`
+	1. `Blur.avgBlur(img, strength = (3,3))`  
 
-	* Average Blur.
-	* This takes 2 values. The Image, and strength default (3,3).
-	* Returns blurred image.
+		* Average Blur.
+		* This takes 2 values. The Image, and strength default (3,3).
+		* Returns blurred image.
 
-	2. `Blur.GaussBlur(img, strength = (3,3))`
+	2. `Blur.GaussBlur(img, strength = (3,3))`  
 
-	* Gaussian Blur.
-	* This takes 2 values. The Image, and strength default (3,3).
-	* Returns blurred image.
+		* Gaussian Blur.
+		* This takes 2 values. The Image, and strength default (3,3).
+		* Returns blurred image.
 
-	3. `Blur.medBlur(img, strength = 3)`
+	3. `Blur.medBlur(img, strength = 3)`  
 
-	* Median Blur.
-	* This takes 2 values. The Image, and strength default 3.
-	* Returns blurred image.
+		* Median Blur.
+		* This takes 2 values. The Image, and strength default 3.
+		* Returns blurred image.
 
-	4. `Blur.biBlur(img, diameter = 10, color = 35, space = 25)`
+	4. `Blur.biBlur(img, diameter = 10, color = 35, space = 25)`  
 
-	* Bilateral Blur. Best.
-	* This takes 4 values. The Image, and diameter, sigmaColor, sigmaSpace.
-	* The diameter, sigmaColor, sigmaSpace can be ignored if you dont need complications.
-	* Returns blurred image.
+		* Bilateral Blur. Best.
+		* This takes 4 values. The Image, and diameter, sigmaColor, sigmaSpace.
+		* The diameter, sigmaColor, sigmaSpace can be ignored if you dont need complications.
+		* Returns blurred image.
 
 * class Transform:
 	
-	1. `Transform.translate(img, x, y)`
+	1. `Transform.translate(img, x, y)`   
 
-	* Translate (move) image to (x,y).
-	* This takes 3 values. The Image, and x and y coordinates.
-	* Returns image.
+		* Translate (move) image to (x,y).
+		* This takes 3 values. The Image, and x and y coordinates.
+		* Returns image.
 
-	2. `Transform.rotate(img, angle, rotPoint = None)`
+	2. `Transform.rotate(img, angle, rotPoint = None)`  
 
-	* Rotate image to with angle along (x,y).
-	* This takes 3 values. The Image, angle and rotPoint => (x,y) coordinates. rotPoint Default => None (0,0).
-	* Returns image. 
+		* Rotate image to with angle along (x,y).
+		* This takes 3 values. The Image, angle and rotPoint => (x,y) coordinates. rotPoint Default => None (0,0).
+		* Returns image. 
 
-	3. `Transform.flip(img, axis)`
+	3. `Transform.flip(img, axis)`  
 
-	* Flip along x or y or both axis.
-	* This takes 2 values. The Image, axis.
-	* axis : 
-		 0 => x
-		 1 => y
-		-1 => xy
-	* Returns image.
+		* Flip along x or y or both axis.
+		* This takes 2 values. The Image, axis.
+		* axis : 
+			 0 => x
+			 1 => y
+			-1 => xy
+		* Returns image.
 
-* class Rescale:
+* class Rescale:  
 	
-	1. `Rescale.rescaleframe(frame, scale)`
+	1. `Rescale.rescaleframe(frame, scale)`  
 
-	* Rescale image.
-	* This takes 2 values. The Image, and scale factor.
-	* Returns image.
+		* Rescale image.
+		* This takes 2 values. The Image, and scale factor.
+		* Returns image.
 
-	2. `Rescale.changeRes(frame, width, height)`
+	2. `Rescale.changeRes(frame, width, height)`  
 
-	* Change resoltuion.
-	* This takes 3 values. The Image, width and height.
-	* Returns image.
+		* Change resoltuion.
+		* This takes 3 values. The Image, width and height.
+		* Returns image.
 
-* class Colorspace:
+* class Colorspace:  
 	
-	1. BGR to other color formats.
+	1. BGR to other color formats.  
 		
-	* This takes 1 values. The Image.
-	* Returns image.
+		* This takes 1 values. The Image.
+		* Returns image.
 
-	* To Gray:
-	`Colorspace.toGray(frame)`
+	* To Gray:  
+		`Colorspace.toGray(frame)`
 	
-	* To HSV:
-	`Colorspace.toHSV(frame)`
+	* To HSV:  
+		`Colorspace.toHSV(frame)`
 	
-	* To LAB:
-	`Colorspace.toLAB(frame)`
+	* To LAB:  
+		`Colorspace.toLAB(frame)`
 	
-	* To RGB:
-	`Colorspace.toRGB(frame)`
+	* To RGB:  
+		`Colorspace.toRGB(frame)`
 
-	2. From other color formats BGR.
+	2. From other color formats BGR.  
 		
-	* This takes 1 values. The Image.
-	* Returns image.
+		* This takes 1 values. The Image.
+		* Returns image.
 
-	* from Gray:
-	`Colorspace.fromGray(frame)`
+	* from Gray:  
+		`Colorspace.fromGray(frame)`
 	
-	* from HSV:
-	`Colorspace.fromHSV(frame)`
+	* from HSV:  
+		`Colorspace.fromHSV(frame)`
 	
-	* from LAB:
-	`Colorspace.fromLAB(frame)`
+	* from LAB:  
+		`Colorspace.fromLAB(frame)`
 	
-	* from RGB:
-	`Colorspace.fromRGB(frame)`
+	* from RGB:  
+		`Colorspace.fromRGB(frame)`
 
-* class Colors:
+* class Colors:  
 	
-	1. `Colors.colorsplit(img, depth)`
+	1. `Colors.colorsplit(img, depth)`  
 
-	* Split colors of an image.
-	* This takes 2 values. The Image and Depth.
-	* Depth:
-		1 --> GRAY
-		2 --> BGR
-	* Returns 3 image of blue, green and red of the specified depth.
+		* Split colors of an image.
+		* This takes 2 values. The Image and Depth.
+		* Depth:
+			1 --> GRAY
+			2 --> BGR
+		* Returns 3 image of blue, green and red of the specified depth.
 
-	2. `Colors.colormerge(b,g,r)`
+	2. `Colors.colormerge(b,g,r)`  
 
-	* Merge 3 color splitted image to get the final image.
+		* Merge 3 color splitted image to get the final image.
 
-* class Bitwise:
+* class Bitwise:  
 
-	1. Bitwise Funtions.
+	1. Bitwise Funtions.  
 	
-	* Overview of each values. Don't mind this if using the Mask class. It will do this automatically 
-	for you:
-		* dst => output array. Specify a Blank image for color image input. Leave None for Gray.
-		* mask => input array. Specify a Mask image for color image input. Leave None for Gray. 
-		* one => Image to which mask is to be applied.
-		* two=> Same as "one" in case of color image. If "one" is gray, use mask image.
+		* Overview of each values. Don't mind this if using the Mask class. It will do this automatically for you:
+			* dst => output array. Specify a Blank image for color image input. Leave None for Gray.
+			* mask => input array. Specify a Mask image for color image input. Leave None for Gray. 
+			* one => Image to which mask is to be applied.
+			* two=> Same as "one" in case of color image. If "one" is gray, use mask image.
 
-	* For operations without mask image, Only need to pass images "one" and "two".
+		* For operations without mask image, Only need to pass images "one" and "two".
 
-	* Bitwise AND:
-	`Bitwise.bitAnd(one, two, dst = None, mask = None)`
+	* Bitwise AND:  
+		`Bitwise.bitAnd(one, two, dst = None, mask = None)`
 
-	* Bitwise OR:
-	`Bitwise.bitOr(one, two, dst = None, mask = None)`
+	* Bitwise OR:  
+		`Bitwise.bitOr(one, two, dst = None, mask = None)`
 
-	* Bitwise XOR:
-	`Bitwise.bitXor(one, two, dst = None, mask = None)`
+	* Bitwise XOR:  
+		`Bitwise.bitXor(one, two, dst = None, mask = None)`
 
-	* Bitwise NOT:
-	`Bitwise.bitNot(one, dst = None, mask = None)`
+	* Bitwise NOT:  
+		`Bitwise.bitNot(one, dst = None, mask = None)`
 
-* class Mask:
+* class Mask:  
 
-	1. `Mask.grayMasking(img, mask)`
+	1. `Mask.grayMasking(img, mask)`  
 
-	* Gray Masking.
-	* Use only to mask gray image.
-	* Takes 2 values,Gray Image and Mask image.
-	* Returns masked image.
+		* Gray Masking.
+		* Use only to mask gray image.
+		* Takes 2 values,Gray Image and Mask image.
+		* Returns masked image.
 
-	2. `Mask.colorMasking(img, mask)`
+	2. `Mask.colorMasking(img, mask)`  
 
-	* Color Masking.
-	* Use only to mask Color image.
-	* Takes 2 values,Color Image and Mask image.
-	* Returns masked image.
+		* Color Masking.
+		* Use only to mask Color image.
+		* Takes 2 values,Color Image and Mask image.
+		* Returns masked image.
 
-* class MaskMaker:
+* class MaskMaker:  
 
-	1. `MaskMaker.create(img, material)`
+	1. `MaskMaker.create(img, material)`  
 
-	* Creates basic rectanglur and circular mask in the centre if the image with half the size.
-	* Takes image to use as masking reference and material (shape).
-	* materials:
-		rectangle
-		circle
-	* KeyError is raised if the input material is not valid.
-	* Returns mask image.
+		* Creates basic rectanglur and circular mask in the centre if the image with half the size.
+		* Takes image to use as masking reference and material (shape).
+		* materials:
+			rectangle
+			circle
+		* KeyError is raised if the input material is not valid.
+		* Returns mask image.
 
 LICENSE
 -------
