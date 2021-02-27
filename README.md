@@ -38,64 +38,64 @@ Documentation:
 * You can ignore passing variables which already contain a default value. As this project is aimed to simplify things like that.  
 * Default values are used if you don't pass the required values.  
 
-* class Edge:
+* class Edge:  
 	
-	1. `Edge.CannyEdge(frame, th1, th2)`
+	1. `Edge.CannyEdge(frame, th1, th2)`  
 	
-	* Canny Edge Detection.
-	* This takes 3 values. The Image, and 2 Thresholds.
-	* Returns image.
+		* Canny Edge Detection.
+		* This takes 3 values. The Image, and 2 Thresholds.
+		* Returns image.
 
-	2. `Edge.DilateEdge(frame, th1, th2, iterations,  strength = (7,7))`
+	2. `Edge.DilateEdge(frame, th1, th2, iterations,  strength = (7,7))`  
+ 
+		* Dilate Edges.
+		* This takes 5 values. The Image, and 2 Thresholds, iterations needed and strength with default (7,7). 
+		* Change the default while calling according to your need. 
+		* Returns image.
 
-	* Dilate Edges.
-	* This takes 5 values. The Image, and 2 Thresholds, iterations needed and strength with default (7,7). 
-	* Change the default while calling according to your need. 
-	* Returns image.
+	3. `Edge.LapEdge(frame)`  
 
-	3. `Edge.LapEdge(frame)`
+		* Laplacian Edge Detection.
+		* This takes 1 value. The Image.
+		* Returns image.
 
-	* Laplacian Edge Detection.
-	* This takes 1 value. The Image.
-	* Returns image.
+	4. `Edge.SobelEdge(frame)`  
 
-	4. `Edge.SobelEdge(frame)`
+		* Sobel Edge Detection. Best.
+		* This takes 1 value. The Image.
+		* Returns image.
 
-	* Sobel Edge Detection. Best.
-	* This takes 1 value. The Image.
-	* Returns image.
-
-* class Threshold:
+* class Threshold:  
 	
-	1. `Threshold.simpleThresh(frame, th1, th2)`
+	1. `Threshold.simpleThresh(frame, th1, th2)`  
 
-	* Simple Threshold.
-	* This takes 3 values. The Image, and 2 Thresholds.
-	* Returns ret -> th1 and thresholded image as thresh.
+		* Simple Threshold.
+		* This takes 3 values. The Image, and 2 Thresholds.
+		* Returns ret -> th1 and thresholded image as thresh.
 
-	2. `Threshold.simpleThresh_inv(frame, th1, th2):`
+	2. `Threshold.simpleThresh_inv(frame, th1, th2):`  
 
-	* Inverse Simple Threshold.
-	* This takes 3 values. The Image, and 2 Thresholds.
-	* Returns ret -> th1 and thresholded image as thresh.
+		* Inverse Simple Threshold.
+		* This takes 3 values. The Image, and 2 Thresholds.
+		* Returns ret -> th1 and thresholded image as thresh.
 
-	3. `Threshold.adaptiveThresh(frame, th1, kernel = 11, mean_tune = 3):`
+	3. `Threshold.adaptiveThresh(frame, th1, kernel = 11, mean_tune = 3):`  
 
-	* Adaptive Threshold. Best.
-	* This takes 4 values. The Image, and max Threshold, kernel size default 11 and Mean_tune default 3.
-	* Returns thresholded image.
+		* Adaptive Threshold. Best.
+		* This takes 4 values. The Image, and max Threshold, kernel size default 11 and Mean_tune default 3.
+		* Returns thresholded image.
 
-	4. `Threshold.adaptiveThresh_inv(frame, th1, kernel = 11, mean_tune = 3)`
+	4. `Threshold.adaptiveThresh_inv(frame, th1, kernel = 11, mean_tune = 3)`  
 
-	* Inverse Adaptive Threshold.
-	* This takes 4 values. The Image, and max Threshold, kernel size default 11 and Mean_tune default 3.
-	* Returns inverse thresholded image.
+		* Inverse Adaptive Threshold.
+		* This takes 4 values. The Image, and max Threshold, kernel size default 11 and Mean_tune default 3.
+		* Returns inverse thresholded image.
 
-	5. `Threshold.adaptiveThresh_gauss(frame, th1, kernel = 11, mean_tune = 3)`
+	5. `Threshold.adaptiveThresh_gauss(frame, th1, kernel = 11, mean_tune = 3)`  
 
-	* Adaptive Threshold Gaussian.
-	* This takes 4 values. The Image, and max Threshold, kernel size default 11 and Mean_tune default 3.
-	* Returns thresholded image.
+		* Adaptive Threshold Gaussian.
+		* This takes 4 values. The Image, and max Threshold, kernel size default 11 and Mean_tune default 3.
+		* Returns thresholded image.
 
 * class Blur:  
 	
