@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
   name = 'EssentialCV',         
   packages = ['EssentialCV'],   
-  version = '0.24',     
+  version = '0.26',     
   license='MIT',       
   description = 'A small module to simplify essential OpenCV functions.',
   long_description=long_description,
@@ -16,7 +16,7 @@ setup(
   author = 'Rednek46',                  
   author_email = 'nuzer501@gmail.com',    
   url = 'https://rednek46.me',  
-  download_url = 'https://github.com/rednek46/EssentialCV/archive/v0.2.tar.gz',    
+  download_url = 'https://github.com/rednek46/EssentialCV/archive/0.25F.tar.gz',    
   keywords = ['OpenCV', 'Simple', 'Essentials', 'haar'], 
   install_requires=[         
           'opencv-contrib-python',
