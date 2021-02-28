@@ -43,15 +43,15 @@ class Threshold():
 		return ret, thresh_inv
 
 	def adaptiveThresh(frame, th1, kernel = 11, mean_tune = 3):
-		adaptive = cv.adaptiveThreshold(gray, th1, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY, kernel, mean_tune)
+		adaptive = cv.adaptiveThreshold(frame, th1, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY, kernel, mean_tune)
 		return adaptive
 
 	def adaptiveThresh_inv(frame, th1, kernel = 11, mean_tune = 3):
-		adaptive_inv = cv.adaptiveThreshold(gray, th1, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY_INV, kernel, mean_tune)
+		adaptive_inv = cv.adaptiveThreshold(frame, th1, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY_INV, kernel, mean_tune)
 		return adaptive_inv
 
 	def adaptiveThresh_gauss(frame, th1, kernel = 11, mean_tune = 3):
-		adaptive = cv.adaptiveThreshold(gray, th1, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, kernel, mean_tune)
+		adaptive = cv.adaptiveThreshold(frame, th1, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, kernel, mean_tune)
 		return adaptive
 
 class Blur():
@@ -111,8 +111,7 @@ class Rescale():
 		return cv.resize(frame, dimension, interpolation = cv.INTER_CUBIC if scale > 1 else cv.INTER_AREA)
 
 	def changeRes(frame, width, height):
-		frame.set(3, width)
-		frame.set(4, height)
+		return cv.resize(frame, (width, height), interpolation = cv.INTER_NEAREST)
 
 	"""
 	def crop(frame):
